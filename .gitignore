@@ -1,2 +1,8 @@
 # Project exclude paths
 /target/
+.Less2HW
+.Lesson1_3
+.Task1_4
+.Task1_6
+.Task1_7
+.Task1_8
