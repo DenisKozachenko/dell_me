@@ -1,10 +1,13 @@
+package lesson_4;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Printer {
 
     private int levelToner;
     private int printedPages;
     private boolean isDuplex = true;
-
-
 
 
     public int getLevelToner() {
@@ -31,9 +34,9 @@ public class Printer {
         isDuplex = duplex;
     }
 
-    public void fillUpToner(int levelToner){
+    public void fillUpToner(int levelToner) {
 
-        if (levelToner >100) {
+        if (levelToner > 100) {
             System.out.println("Box for toner is filled up");
         }
     }
@@ -43,23 +46,24 @@ public class Printer {
         this.isDuplex = isDuplex;
     }
 
-    public Object printPages (Object obj){
+    public List<Integer> print (Printer printer) {
 
-        Object result = 0;
-       for (int i = 0; i <= this.printedPages; i++ ) {
-           result = i;
+        List<Integer> result = new ArrayList<>();
 
-       }
-       return result;
+        for (int i = 0; i <= printer.printedPages; i++) {
+            result.add(i);
+
+        }
+        return result;
     }
 
-    public class Lesson4_ {
+    public static class Lesson4_ {
 
-        public void main() {
+        public static void main(String... arg) {
 
-            Printer printIt = new Printer(23, true);
+            Printer printIt = new Printer(7, true);
 
-            System.out.println(printPages(printIt));
+            System.out.println(printIt.print(printIt));
 
         }
 

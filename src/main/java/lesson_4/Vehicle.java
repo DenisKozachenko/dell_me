@@ -1,3 +1,5 @@
+package lesson_4;
+
 public class Vehicle {
     public static void main(String[] args) {
     }
@@ -16,7 +18,7 @@ public class Car extends Vehicle{
 
 }
 public class Ford extends Car {
-        public String type;
+        public String model;
 
 }
 }

@@ -1,3 +1,5 @@
+package lesson_4;
+
 public class Lesson4_5 {
     public static void main(String[] args) {
     }

@@ -1,3 +1,5 @@
+package lesson_4;
+
 public class Human {
     public int weight;
     public int age;
