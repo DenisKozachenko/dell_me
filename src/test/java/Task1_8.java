@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Task1_8 {
 
@@ -11,18 +13,20 @@ public class Task1_8 {
     }
 
 
-    private ArrayList<Character> transformIntToChar(int[] values) {
-        ArrayList<Character> buffer = new ArrayList<>();
+    private List<Character> transformIntToChar(int[] values) {
+        List<Character> buffer = new ArrayList<Character>();
         for (int i : values) {
             buffer.add(((char) i));
         }
         return buffer;
     }
 
-    private void printList(ArrayList<Character> characters) {
+    private void printList(List<Character> characters) {
         for (char c : characters) {
             System.out.print(c);
         }
+
+
     }
 }
 
