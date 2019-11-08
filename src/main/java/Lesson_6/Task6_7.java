@@ -16,8 +16,11 @@ public class Task6_7 {
 
     @Override
     public boolean equals(Object o) {
-
-        return true;
+        if (this == o) return true;
+        if (!(o instanceof Task6_7)) return false;
+        Task6_7 task6_7 = (Task6_7) o;
+        return first.equals(task6_7.first) &&
+                last.equals(task6_7.last);
     }
 
     @Override
